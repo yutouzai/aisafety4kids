@@ -180,6 +180,70 @@
                 margin: 0.5rem 0;
             }
         }
+
+        .team {
+            padding: 4rem 0;
+            background-color: var(--light-bg);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .team-member h3 {
+            margin: 0.5rem 0;
+            color: var(--primary-color);
+        }
+
+        .team-member p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .team-member .social-links {
+            margin-top: 1rem;
+        }
+
+        .team-member .social-links a {
+            color: var(--secondary-color);
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .team-member .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
     </style>
 </head>
 <body>
@@ -248,6 +312,54 @@
                 <div class="links">
                     <a href="#" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
                     <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> arXiv</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://yaman-yu.github.io/images/yaman.jpg" alt="Yaman Yu">
+                    <h3>Yaman Yu</h3>
+                    <p>Lead Researcher</p>
+                    <div class="social-links">
+                        <a href="https://yaman-yu.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="https://github.com/yaman-yu" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yaman-yu" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://yirenliu.github.io/images/yiren.jpg" alt="Yiren Liu">
+                    <h3>Yiren Liu</h3>
+                    <p>Research Scientist</p>
+                    <div class="social-links">
+                        <a href="https://yirenliu.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="https://github.com/yirenliu" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yiren-liu" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://yunhuang.github.io/images/yun.jpg" alt="Yun Huang">
+                    <h3>Yun Huang</h3>
+                    <p>Research Scientist</p>
+                    <div class="social-links">
+                        <a href="https://yunhuang.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="https://github.com/yunhuang" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yun-huang" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://yangwang.github.io/images/yang.jpg" alt="Yang Wang">
+                    <h3>Yang Wang</h3>
+                    <p>Research Scientist</p>
+                    <div class="social-links">
+                        <a href="https://yangwang.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="https://github.com/yangwang" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yang-wang" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
